@@ -1,0 +1,8 @@
+/* pages/infomation/infomation.wxss */
+/* 上面黄色部分总体 */
+.above_background{
+        width: 100%;
+        height: 400rpx;  /* 30%屏幕宽 */
+        margin: 0px;
+        background-color: #f7d203;
+}

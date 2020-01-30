@@ -1,0 +1,133 @@
+/* pages/my/my.wxss */
+
+/* 上面黄色部分总体 */
+.above_background{
+        width: 100%;
+        height: 400rpx;  /* 30%屏幕宽 */
+        margin: 0px;
+        background-color: #f7d203;
+}
+
+/* 上面用户信息 */
+/* ----上半部分 */
+.user_info{
+        width: 100%;
+        height: 200rpx;
+        margin-top: 0rpx;
+        display: flex;
+        justify-content: start;
+}
+
+/* 头像 */
+.image{
+        margin-left: 80rpx;
+        height: 180rpx;
+        width: 180rpx;
+        border-radius: 50%;
+        background-color: purple;
+}
+
+/* 字体 */
+.text{
+        font-family: "华康手札";
+}
+
+/* 布局和字体大小 */
+.above_text{
+        display: flex;
+        justify-content: start;
+        font-size: 35rpx;
+}
+
+/* 性别和等级 */
+.subtext{
+        margin-left: 30rpx;   
+        color: grey;
+}
+
+/* 昵称 */
+.nickname{
+        margin-left: 30rpx;
+        font-weight: bold;
+}
+
+/* 个人简介 */
+.below_text{
+        margin-left: 30rpx;
+        margin-top: 20rpx;
+        font-size: 27rpx; 
+}
+/* ----下半部分 */
+/* 布局 */
+.relative_info{
+        /* background-color: red; */
+        height: 150rpx;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20rpx;
+}
+
+/* 三个字块布局 */
+.relative_info_sub{
+        margin-top: 20prx;
+        /* background-color: greenyellow; */
+        width: 110rpx;
+        height: 150rpx;
+        margin-left: 75rpx;
+        margin-right: 75rpx;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+
+/* 圆圈和数字 */
+.relative_info_sub_num{
+        width: 100rpx;
+        height: 80rpx;
+        border-radius: 50%;
+        background-color: white;
+        text-align: center;
+        padding-top: 20rpx;
+}
+
+/* 说明字体样式 */
+.relative_info_sub_text{
+        font-size: 40rpx;
+        text-align: center;
+}
+
+/* 下面黄色部分总体 */
+.below_background{
+        margin-top: 200rpx;  
+}
+
+/* 选项卡 */
+.item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+/* 选项卡文字 */
+.item_text{
+        margin-top: 40rpx;
+        margin-left: 15%;
+        font-size: 40rpx;
+        font-weight: bold; 
+}
+
+/* 选项卡标识 */
+.item_icon{
+        margin-top: 40rpx;
+        margin-right: 15%;
+        font-size: 40rpx;
+        color: grey;
+}
+
+/* 底部的横线 */
+page{
+        background-color: #f5f5f5;
+        height: 99%;
+        border-block-end: 10rpx solid rgb(204, 202, 202);
+}

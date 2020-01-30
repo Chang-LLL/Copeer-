@@ -1,0 +1,62 @@
+<!--pages/my/my.wxml-->
+<view class = "above_background">
+        <view class="user_info">
+                <view class="image">
+                
+                </view>
+                <view class="text">
+                        <view class="above_text">
+                                <view class="nickname"> 
+                                        {{nickname}}
+                                </view>
+                                <view class="subtext">
+                                        {{sex}}
+                                </view>
+                                <view class="subtext">
+                                        {{level}}
+                                </view>
+                        </view>
+                        <view class="below_text">
+                                {{personal_introduction}}
+                        </view>
+                </view>
+        </view>
+        <view class="relative_info">
+                <view class="relative_info_sub">
+                        <view class="relative_info_sub_num">
+                                {{post}}
+                        </view>
+                        <view class="relative_info_sub_text">
+                                帖子
+                        </view>
+                </view>
+                <view class="relative_info_sub">
+                        <view class="relative_info_sub_num">
+                                {{attention}}
+                        </view>
+                        <view class="relative_info_sub_text">
+                                关注
+                        </view>
+                </view>
+                <view class="relative_info_sub">
+                        <view class="relative_info_sub_num">
+                                {{fans}}
+                        </view>
+                        <view class="relative_info_sub_text">
+                                粉丝
+                        </view>                        
+                </view>
+        </view>
+</view>
+<view  class = "below_background">
+        <view wx:for="{{item_list}}">
+                <view class="item" bindtap="choose_function">
+                        <view class="item_text">
+                                {{item.item_name}}
+                        </view>
+                        <view class="item_icon">
+                                >
+                        </view>
+                </view>
+        </view>
+</view>
