@@ -1,3 +1,58 @@
+<!--pages/information/information.wxml-->
 <view class = "above_background">
-        
+        <view class="above_top">
+                <view class = "message_type">
+                        <view wx:for = "{{messege_type}}" bindtap="tap_message_type" data-index="{{index}}">
+                                <view wx:if = "{{item.choose}}" class="text_choose">
+                                        {{item.text}}
+                                </view>
+                                <view wx:else class="text_unchoose">
+                                        {{item.text}}
+                                </view>
+                        </view>
+                </view>
+                <view class="icon_type">
+                        <image  class="top_icon" src = "../../images/search.png" mode="scaleToFill"></image>
+                        <image  class="top_icon" src = "../../images/more.png" mode="scaleToFill"></image>
+                </view>
+        </view>
+        <view class="above_center">
+                <view wx:for="{{info_group}}" class="info_group" data-index2="{{index}}"  bindtap="tap_above_center">
+                        <view wx:if="{{!item.choose}}">
+                                <image class="chat_icon" src = "../../images/chat_unchoose.png" mode="scaleToFill"></image>
+                        </view>
+                        <view wx:else>
+                                <image class="chat_icon" src = "{{item.url}}" mode="scaleToFill"></image>
+                        </view>
+                        {{item.text}}
+                </view>
+        </view>
+</view>
+
+<view class= "below_background">
+        <view wx:for="{{information_list}}">
+                <view class="info_card">
+                        <image class="head_image" mode="scaleToFill"></image>
+                        <view class="info_concret">
+                                <view class="nickname">
+                                        {{item.nickname}}
+                                </view>
+                                <view class="detail">
+                                        {{item.show_info}}
+                                </view>
+                                <view class="detail">
+                                        ... ...
+                                </view>
+                        </view>
+                        <view class="info_right">
+                                <view class="date">
+                                        {{item.date}}
+                                </view>
+                                <view class="info_icon">
+                                        {{item.num}}
+                                </view>
+                        </view>
+                </view>
+                <view class="hr"></view>
+        </view>
 </view>

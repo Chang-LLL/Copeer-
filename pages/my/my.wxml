@@ -15,6 +15,7 @@
                                 <view class="subtext">
                                         {{level}}
                                 </view>
+                                <image class="top_icon" src = "../../images/setting.png" mode="scaleToFill"></image>
                         </view>
                         <view class="below_text">
                                 {{personal_introduction}}
@@ -52,6 +53,7 @@
         <view wx:for="{{item_list}}">
                 <view class="item" bindtap="choose_function">
                         <view class="item_text">
+                                <view class="before_text"></view>
                                 {{item.item_name}}
                         </view>
                         <view class="item_icon">

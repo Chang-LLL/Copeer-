@@ -1,2 +1,29 @@
 <!--pages/around/around.wxml-->
-<text>pages/around/around.wxml</text>
+<view class = "above_background">
+        <view class="above_top">
+                <view class = "message_type">
+                        <view wx:for = "{{messege_type}}" bindtap="tap_message_type" data-index="{{index}}">
+                                <view wx:if = "{{item.choose}}" class="text_choose">
+                                        {{item.text}}
+                                </view>
+                                <view wx:else class="text_unchoose">
+                                        {{item.text}}
+                                </view>
+                        </view>
+                </view>
+                <view class="icon_type">
+                        <image  class="top_icon" src = "../../images/search.png" mode="scaleToFill"></image>
+                </view>
+        </view>
+        <view class="above_center">
+                <view wx:for="{{info_group}}" class="info_group" data-index2="{{index}}"  bindtap="tap_above_center">
+                        <view wx:if="{{!item.choose}}">
+                                <image class="chat_icon" src = "../../images/聊天未选择.png" mode="scaleToFill"></image>
+                        </view>
+                        <view wx:else>
+                                <image class="chat_icon" src = "../../images/聊天选择.png" mode="scaleToFill"></image>
+                        </view>
+                        {{item.text}}
+                </view>
+        </view>
+</view>

@@ -5,7 +5,24 @@ Page({
          * 页面的初始数据
          */
         data: {
-
+                messege_type: [
+                        {
+                                text: "关注",
+                                choose: false
+                        },
+                        {
+                                text: "推荐",
+                                choose: true
+                        },
+                        {
+                                text: "关注",
+                                choose: false
+                        },
+                        {
+                                text: "关注",
+                                choose: false
+                        }
+                ],
         },
 
         /**
