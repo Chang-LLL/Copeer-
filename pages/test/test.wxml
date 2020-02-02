@@ -1,0 +1,4 @@
+<pic_swiper 
+        swiper_number="{{img_list.length}}" 
+        img_url="{{img_list}}">
+</pic_swiper>

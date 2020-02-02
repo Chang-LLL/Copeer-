@@ -1,6 +1,13 @@
 <!--pages/around/around.wxml-->
+<view bindtap='add_detial'>
+        <image class="add_icon" src="../../images/add_icon.png"></image>
+</view>
+
 <view class = "above_background">
         <view class="above_top">
+                <view class="icon_type">
+                        <image  class="top_icon" src = "../../images/search.png" mode="scaleToFill"></image>
+                </view>
                 <view class = "message_type">
                         <view wx:for = "{{messege_type}}" bindtap="tap_message_type" data-index="{{index}}">
                                 <view wx:if = "{{item.choose}}" class="text_choose">
@@ -11,19 +18,40 @@
                                 </view>
                         </view>
                 </view>
-                <view class="icon_type">
-                        <image  class="top_icon" src = "../../images/search.png" mode="scaleToFill"></image>
+        </view>
+        <pic_swiper 
+        swiper_number="{{img_list.length}}" 
+        img_url="{{img_list}}">
+        </pic_swiper>
+</view>
+
+<view class="below_background">
+        <view class="below_center">
+                <view wx:for="{{center_icon_list}}" class="center_icon_text">
+                        <image src="{{item.url}}" class="center_icon_img" mode="scaleToFill"></image>
+                        {{item.text}}
                 </view>
         </view>
-        <view class="above_center">
-                <view wx:for="{{info_group}}" class="info_group" data-index2="{{index}}"  bindtap="tap_above_center">
-                        <view wx:if="{{!item.choose}}">
-                                <image class="chat_icon" src = "../../images/聊天未选择.png" mode="scaleToFill"></image>
+        <view class="hr2"></view>
+
+        <view class="shop_card_list">
+                <view wx:for = "{{shop_card_list}}" class="shop_card">
+                        <view class="card_image">
+                        
                         </view>
-                        <view wx:else>
-                                <image class="chat_icon" src = "../../images/聊天选择.png" mode="scaleToFill"></image>
+                        <view class="card_title">
+                                {{item.title}}
                         </view>
-                        {{item.text}}
+                        <view class="card_detail">
+                                {{item.text}}
+                        </view>
+                        <view class="card_bottom">
+                                <view class="card_cost">
+                                        <view class="card_cost_left">{{item.cost}}c</view>
+                                        <view class="card_cost_right">+{{item.addition}}</view>
+                                </view>
+                                <view class="card_more">...</view>
+                        </view>
                 </view>
         </view>
 </view>

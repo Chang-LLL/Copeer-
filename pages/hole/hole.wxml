@@ -1,2 +1,65 @@
 <!--pages/hole/hole.wxml-->
-<text>pages/hole/hole.wxml</text>
+
+<view bindtap='add_detial'>
+        <image class="add_icon" src="../../images/add_icon.png"></image>
+</view>
+
+<view class = "above_background">
+        <view class="above_top">
+                <view class="icon_type">
+                        <image  class="top_icon" src = "../../images/search.png" mode="scaleToFill"></image>
+                </view>
+                <view class = "message_type">
+                        <view wx:for = "{{messege_type}}" bindtap="tap_message_type" data-index="{{index}}">
+                                <view wx:if = "{{item.choose}}" class="text_choose">
+                                        {{item.text}}
+                                </view>
+                                <view wx:else class="text_unchoose">
+                                        {{item.text}}
+                                </view>
+                        </view>
+                </view>
+        </view>
+        <pic_swiper 
+        swiper_number="{{img_list.length}}" 
+        img_url="{{img_list}}">
+        </pic_swiper>
+</view>
+
+<view class="below_background">
+        <view class="below_center">
+                <view wx:for="{{center_icon_list}}" class="center_icon_text">
+                        <image src="{{item.url}}" class="center_icon_img" mode="scaleToFill"></image>
+                        {{item.text}}
+                </view>
+        </view>
+        <view class="hr"></view>
+        <view class="center_text">社团活动</view>
+        <view class="hr2"></view>
+        <view wx:for = "{{news_list}}">
+                <view class="news_card">
+                        <view class="news_image">
+
+                        </view>
+                        <view class="news_right">
+                                <view class="news_title">
+                                        {{item.title}}
+                                </view>
+                                <view class="news_detail">
+                                        {{item.show_text}}
+                                </view>
+                                <view class="news_detail">... ...</view>
+                                <view class="news_bottom">
+                                        <view class="news_icon_list">
+                                                <view wx:for="{{item.relative_number}}" class="news_icon">
+                                                <view class="circle"></view>
+                                                        {{item}}
+                                                </view>
+                                        </view>
+                                </view>
+                        </view>
+                </view>
+                <view class="hr2"></view>
+        </view>
+</view>
+

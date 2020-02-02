@@ -1,11 +1,12 @@
 {
         "pages": [
+                "pages/around/around",
                 "pages/information/information",
                 "pages/my/my",
                 "pages/index/index",
                 "pages/logs/logs",
-                "pages/hole/hole",
-                "pages/around/around"
+                "pages/test/test",
+                "pages/hole/hole"
         ],
         "window": {
                 "backgroundTextStyle": "light",

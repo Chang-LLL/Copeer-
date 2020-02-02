@@ -1,6 +1,5 @@
 {
         "usingComponents": {
                 "pic_swiper": "../../components/pic_swiper/pic_swiper"
-        },
-        "navigationBarTitleText": ""
+        }
 }

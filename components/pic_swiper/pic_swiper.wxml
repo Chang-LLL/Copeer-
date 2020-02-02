@@ -1,0 +1,13 @@
+<!--components/swiper/swiper.wxml-->
+<view class='idx-content'>
+    <view class='idx-swiper'>
+        <view   class='idx-cswp {{item.swpClass}}' 
+                wx:for="{{swiperList}}" wx:key=""
+                bindtap="swpBtn" bindtouchstart='touchStart' bindtouchend="touchEnd"
+                data-index="{{index}}">
+            <image src='{{item.imgsrc}}' mode='widthFix'></image>
+            <view class='swp-title' hidden="{{item.swpClass!=='swp-center'}}">
+            </view>
+        </view>
+    </view>
+</view>

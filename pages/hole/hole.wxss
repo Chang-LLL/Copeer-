@@ -1,1 +1,190 @@
 /* pages/hole/hole.wxss */
+/* 背景色 */
+page{
+        background-color: #f5f5f5;
+        height: 100%;
+        font-family: "华康手札体W5P";
+}
+
+/* 浮动按钮 */
+.add_icon{
+        position: fixed;
+        width:150rpx;
+        height:150rpx;
+        bottom: 10%;
+        right: 10rpx;
+}
+
+/* 上面黄色部分总体 */
+.above_background{
+        width: 100%;
+        height: 400rpx;  /* 30%屏幕宽 */
+        margin: 0px;
+        background-color: #e9d31e;
+}
+
+/* 顶部文字和两个图标*/
+.above_top{
+        display: flex;
+        justify-content: start;
+}
+
+/* 消息，分组 */
+.message_type{
+        /* background-color: pink; */
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-left: 20rpx; 
+}
+
+/* 被选中文字 */
+.text_choose{
+        font-size: 55rpx;
+        font-weight: bolder;
+        margin-right: 50rpx;
+}
+
+/* 未被选中文字 */
+.text_unchoose{
+        font-size: 45rpx;
+        font-weight: bold;
+        margin-right: 50rpx;
+}
+
+/* 图标布局 */
+.icon_type{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 40rpx;
+}
+
+/* 顶部图标 */
+.top_icon{
+        width: 100rpx;
+        height: 100rpx;
+}
+
+/* 下半部分总体 */
+.below_background{
+        margin-top: 200rpx;
+}
+
+/* 中间四个小图标布局 */
+.below_center{
+        display: flex;
+        justify-content: space-around;
+        margin-left: 60rpx;
+        margin-right: 60rpx;
+        margin-bottom: 10rpx;
+        font-weight: bold;
+}
+
+/* 小图标和文字布局 */
+.center_icon_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 30rpx;
+}
+
+/* 图标大小 */
+.center_icon_img{
+        width: 120rpx;
+        height: 120rpx;
+}
+
+/* 间隔线 */
+.hr{
+        width: 100%;
+        height: 20rpx;
+        background:-webkit-linear-gradient(top,#d8d6d6,#e9e6e6,#d8d6d6);
+}
+
+.hr2{
+        width: 100%;
+        height: 20rpx;
+        background:-webkit-linear-gradient(top,#d8d6d6,#e9e6e6,#f5f5f5);
+}
+
+/* 社团活动字体样式 */
+.center_text{
+        margin-left: 50rpx;
+        margin-top: 10rpx;
+        margin-bottom: 10rpx;
+        font-weight: bolder;
+        font-size: 50rpx;
+}
+
+/* 新闻卡片 */
+.news_card{
+        margin-left: 50rpx;
+        margin-right: 30rpx;
+        margin-top: 20rpx;
+        margin-bottom: 20rpx;
+        display: flex;
+        justify-content: space-between;
+}
+
+/* 新闻图片 */
+.news_image{
+        width: 260rpx;
+        height: 260rpx;
+        margin-top: 20rpx;
+        background-color: pink;
+}
+
+/* 新闻右边文字部分 */
+.news_right{
+        margin-left: 40rpx;
+        width: 65%;
+}
+
+/* 新闻标题 */
+.news_title{
+        font-size: 50rpx;
+        font-weight: bold;
+        margin-bottom: 20rpx;
+}
+
+/* 新闻内容 */
+.news_detail{
+        font-size: 35rpx;
+        /* font-weight: bold; */
+        margin-bottom: 20rpx;
+}
+
+/* 底部布局 */
+.news_bottom{
+        display: flex;
+        justify-content: flex-end;
+        font-size: 35rpx;
+        font-weight: bold;
+}
+
+/* 三个圆圈加数字 */
+.news_icon_list{
+        display: flex;
+        justify-content: flex-start;
+}
+
+.news_icon{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-left: 10rpx;
+        width: 120rpx;
+        /* background-color: paleturquoise; */
+}
+
+/* 单个圆圈 */
+.circle{
+        width: 40rpx;
+        height: 40rpx;
+        background-color: #d1d0d0;
+        border: 1rpx solid #8f8e8e;
+        border-radius: 50%;
+        margin-right: 5rpx;
+}
